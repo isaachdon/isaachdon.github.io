@@ -1,0 +1,312 @@
+/* 
+    Created on : Nov 12, 2018, 10:56:12 PM
+    Author     : Isaac Herndon
+*/
+*{
+    font-family: "Eras Demi ITC", sans-serif;
+    font-style: italic;
+    font-weight: bold;
+}
+
+.colgate {
+    color: white;
+    font-family: "Eras Demi ITC", sans-serif;
+    font-style: italic;
+    font-weight: bold;
+}
+
+#banner {
+    font-size: 72pt;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0 auto;
+    padding: 0;
+    overflow: hidden;
+    background: linear-gradient(#bc0303, #FF342A);
+}
+
+li {
+    display: inline-block;
+    margin: 0 auto;
+    text-align: center;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+    background-color: #bc0303;
+}
+
+#cart {
+    max-height: 100px;
+    width: auto;
+    float:right;
+    position: absolute;
+    right: 0px;
+    top: 20px;
+}
+
+.indexpictures {
+    position: relative;
+    display: inline-block;
+}
+
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.darken {
+    position: relative;
+    display: inline-block;
+}
+
+.darken:hover {
+    opacity: 0.5;
+}
+
+.tabler {
+    min-width: 1500px;
+    display: table;
+    table-layout: fixed;
+    width: 100%;
+}
+
+table.list th {
+    background-color: #e4f1fe;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    padding: 5px;
+}
+
+table.list td {
+    border-bottom: 1px solid #ccc;
+    padding: 4px;
+    vertical-align: top;
+}
+table.list th.col1 {
+   
+}
+
+table.list th.col2 {
+    width: 250px;
+}
+
+table.list th.col3 {
+    width: 150px;
+}
+
+table.list th.col4 {
+    width: 60px;
+}
+
+table.list tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+#allProductsTable{
+    border: 3px solid black;
+    border-radius: 8px;
+    text-align:center;
+    margin:0 auto;
+    background-color: #efeded;
+}
+.itemPic{
+    border-radius: 8px;
+    height: 300px;
+    width: 250px;
+}
+tr, td{
+    padding: 20px;
+    font-size: 20px
+}
+th{
+    font-size: 20pt;
+}
+#title{
+   text-align: center;
+   margin-left: auto;
+   margin-right: auto;
+   font-size: 40px;
+   border: 3px solid black;
+   border-radius: 8px;
+   width: 500px;
+   height: 150px;
+   background-color: #efeded;
+}
+#filter{
+    margin-left: 85%;
+    text-align: center;
+}
+.select{
+    width: 30px;
+    height: 25px;
+}
+
+.h2 {
+    font-size: 50pt;
+}
+
+.buttonstyle {
+    background-color: #ff7665;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+.buttonstyle:hover {
+    background-color: #842b27;
+}
+
+#searchbar {
+    text-align: center;
+    
+}
+
+.searchbutton {
+    background-color: #FF342A;
+    border: none;
+    color: white;
+    height: 35px;
+    width: 100px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+.searchbutton:hover {
+    background-color: #893434;
+    cursor: pointer;
+}
+
+.searchbar {
+    height: 31px;
+    text-align: center;
+    font-size: 16px;
+    border: 1px solid darkgrey;
+    transition: .5s;
+    outline: none;
+}
+
+.searchbar:focus {
+    border: 1px solid #FF342A;
+}
+
+.addtocartbutton {
+    background-color: #FF342A;
+    border: none;
+    color: white;
+    height: 35px;
+    width: 125px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+.addtocartbutton:hover {
+    background-color: #893434;
+    cursor: pointer;
+}
+
+/* styles of the book list table */
+table.databaselist {
+    width: 100%;
+    border-collapse: collapse;
+    font: 12px/18px Arial, Sans-serif;
+    margin: 5px 0;
+}
+
+table.databaselist th {
+    background-color: #ff6687;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    padding: 5px;
+}
+
+table.databaselist td {
+    border-bottom: 1px solid #ccc;
+    padding: 4px;
+    vertical-align: top;
+}
+table.databaselist th.col1 {
+   
+}
+
+table.databaselist th.col2 {
+    width: 250px;
+}
+
+table.databaselist th.col3 {
+    width: 150px;
+}
+
+table.databaselist th.col4 {
+    width: 60px;
+}
+
+
+table.databaselist tr:nth-child(even) {
+    background-color: #ffccd7;
+}
+
+.inputbar {
+    height: 25px;
+    font-size: 16px;
+    border: 1px solid darkgrey;
+    transition: .5s;
+    outline: none;
+    padding-left: 2px;
+}
+
+.inputbar:focus {
+    border: 1px solid #FF342A;
+}
+
+.normalbuttons {
+    background-color: #FF342A;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+.normalbuttons:hover {
+    background-color: #893434;
+    cursor: pointer;
+}
+
+.aboutus {
+    background: #FF342A;
+    color: white;
+    font-size: 25pt;
+    padding: 10px;
+    width: fit-content;
+    box-shadow: 4px 5px rgba(81, 81, 81, .65);
+}
