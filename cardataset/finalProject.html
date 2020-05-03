@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Final Project - Car Popularity</title>
+	<script src="https://d3js.org/d3.v4.min.js"></script>
+    <script src="https://d3js.org/d3-scale-chromatic.v1.min.js"></script>
+	<style>
+		body {
+			font-family: Arial;
+			font-size: 20px;
+            text-align: center;
+		}
+    	text { 
+			font-family: Arial; 
+			font-size: 17px;
+		}
+
+		.axis path, .axis line {
+			fill: none;
+			stroke: black;
+			shape-rendering: crispEdges;
+		}
+		.tick text {
+			fill: black;
+			font-size: 13px;
+		}
+
+		rect {
+			stroke: white;
+		}
+        
+        div.tooltip {	
+            position: absolute;			
+            text-align: center;			
+            width: auto;					
+            height: auto;					
+            padding: 2px;				
+            font: 12px sans-serif;		
+            background: lightsteelblue;	
+            border: 0px;		
+            border-radius: 8px;			
+            pointer-events: none;			
+        }
+        
+        svg {
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            display: inline-block;
+        }
+        
+        svg:hover {
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.5);
+        }
+        
+        path { 
+            stroke: steelblue;
+            stroke-width: 2;
+            fill: none;
+        }
+        
+        #parallel {
+            display: inline-block;
+        }
+        
+        #legend {
+            display: inline-block;
+        }
+        
+        #charts {
+            margin: 0 auto;
+            position: absolute;
+            left: 50%;
+            min-width: 1500px;
+            transform: translate(-50%, 0);
+        }
+        
+        #selectionDiv {
+            vertical-align: top;
+            height: 30px;
+            width: 600px;
+            font-size: 20px;
+            position: absolute;
+        }
+        
+        #selection {
+            font-size: 20px;
+            height: 30px;
+            background-color: #319e9e;
+            border: 2px solid #1d6969;
+            padding-left: 5px;
+            padding-right: 5px;
+            color: white;
+            border-radius: 5px;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            appearance: none;
+            text-align-last: center;
+        }
+        
+        option {
+            border: 2px solid blue;
+        }
+        
+        #first {
+            display: inline-block;
+            height: 550px;
+            width: 600px;
+        }
+        
+        #main {
+            margin-top: 40px;
+        }
+        
+	</style>
+</head>
+<body>
+
+	<p style="font-size: 40px">Car Popularity</p>
+    
+    <div id="charts">
+        
+        <div id="first">
+            <div id="selectionDiv">
+                <label for="selection">Select attribute to compare:</label>
+                <select id="selection">
+                    <option value="Price" selected>Price</option>
+                    <option value="Engine Size">Engine Size</option>
+                    <option value="Fuel Efficiency">Fuel Efficiency</option>
+                    <option value="Power Perf Factor">Power Perf Factor</option>
+                </select>
+            </div>
+            
+            <svg id="main" width="600" height="510">
+            </svg>
+        </div>
+        <div id="parallel"></div>
+        
+        <div id="legend"></div>
+        
+    </div>
+    
+    <script src="finalProject.js"></script>
+</body>
+
+</html>
