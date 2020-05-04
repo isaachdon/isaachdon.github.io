@@ -79,8 +79,9 @@ var CHART_SIZE = 425;
                     .style('font-weight', 'bold')
 
                 d3.selectAll('.left_' + d)
-                  .style('fill', 'red')
-                  .attr('r', '8px')
+                    .style('fill', 'red')
+                    .attr('r', '8px')
+                    .moveToFront();
 
                  d3.selectAll(".right_" + d)
                     .style('stroke', 'red')
