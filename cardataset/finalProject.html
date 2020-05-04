@@ -84,16 +84,14 @@
         #selection {
             font-size: 20px;
             height: 30px;
-            background-color: #319e9e;
-            border: 2px solid #1d6969;
-            padding-left: 5px;
-            padding-right: 5px;
-            color: white;
-            border-radius: 5px;
             -webkit-appearance: none;
             -moz-appearance: none;
             appearance: none;
             text-align-last: center;
+        }
+        
+        #selection:hover {
+            cursor: pointer;
         }
         
         option {
@@ -110,18 +108,37 @@
             margin-top: 40px;
         }
         
+        .buttonStyling {
+            background-color: #319e9e;
+            border: 2px solid #1d6969;
+            padding-left: 10px;
+            padding-right: 10px;
+            color: white;
+            border-radius: 5px;
+        }
+        
+        #documentation {
+            font-size: 25px;
+            text-decoration: none;
+        }
+        
+        #heading {
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+        
 	</style>
 </head>
 <body>
 
-	<p style="font-size: 40px">Car Popularity</p>
+	<p class="buttonStyling" id="heading" style="font-size: 40px">Car Popularity</p>
     
     <div id="charts">
         
         <div id="first">
             <div id="selectionDiv">
                 <label for="selection">Select attribute to compare:</label>
-                <select id="selection">
+                <select class="buttonStyling" id="selection">
                     <option value="Price" selected>Price</option>
                     <option value="Engine Size">Engine Size</option>
                     <option value="Fuel Efficiency">Fuel Efficiency</option>
@@ -135,8 +152,11 @@
         <div id="parallel"></div>
         
         <div id="legend"></div>
+        <br><br>
+        <a class="buttonStyling" id="documentation" href="">Documentation</a>
         
     </div>
+    
     
     <script src="finalProject.js"></script>
 </body>
