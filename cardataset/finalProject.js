@@ -62,9 +62,9 @@ var CHART_SIZE = 425;
               .data(cars)
               .enter()
               .append('circle')
-                .attr('cx',10)
+                .attr('cx',15)
                 .attr('cy', function(d,i) {return (i*17) + 25})
-                .attr('r', 4)
+                .attr('r', 3)
                 .style('fill', '#319e9e')
                 .attr('id', function(d) { return 'circle_' + d; } )
 
@@ -85,7 +85,7 @@ var CHART_SIZE = 425;
               {
                 d3.select("#circle_" + d)
                     .style('fill', 'red')
-                    .attr('r', '5px')
+                    .attr('r', '4px')
 
                 d3.select('#label_' + d)
                     .style('fill', 'red')
@@ -106,7 +106,7 @@ var CHART_SIZE = 425;
               .on('mouseout', function(d) {
                 d3.select("#circle_" + d)
                     .style('fill', '#319e9e')
-                    .attr('r', '4px')
+                    .attr('r', '3px')
 
                 d3.select('#label_' + d)
                     .style('fill', '#319e9e')
@@ -169,7 +169,7 @@ var CHART_SIZE = 425;
             
                 d3.select("#circle_" + d.Manufacturer)
                     .style('fill', 'red')
-                    .attr('r', '6px')
+                    .attr('r', '4px')
 
                 d3.select('#label_' + d.Manufacturer)
                     .style('fill', 'red')
@@ -194,7 +194,7 @@ var CHART_SIZE = 425;
             
                 d3.select("#circle_" + d.Manufacturer)
                     .style('fill', '#319e9e')
-                    .attr('r', '4px')
+                    .attr('r', '3px')
 
                 div.transition()		
                     .duration(200)		
@@ -296,7 +296,7 @@ var CHART_SIZE = 425;
               
                         d3.select("#circle_" + d.Manufacturer)
                             .style('fill', 'red')
-                            .attr('r', '6px')
+                            .attr('r', '4px')
 
                         d3.select('#label_' + d.Manufacturer)
                             .style('fill', 'red')
@@ -317,7 +317,7 @@ var CHART_SIZE = 425;
               
                         d3.select("#circle_" + d.Manufacturer)
                             .style('fill', '#319e9e')
-                            .attr('r', '4px');
+                            .attr('r', '3px');
 
                         d3.select('#label_' + d.Manufacturer)
                             .style('fill', '#319e9e')
