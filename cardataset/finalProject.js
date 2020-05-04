@@ -56,17 +56,7 @@ var CHART_SIZE = 425;
         var legend = d3.select('#legend')
             .append("svg")
             .attr("width", width + margin.left + margin.right)
-            .attr("height", height + margin.top + margin.bottom)
-
-            legend.selectAll('circle')
-              .data(cars)
-              .enter()
-              .append('circle')
-                .attr('cx',15)
-                .attr('cy', function(d,i) {return (i*17) + 25})
-                .attr('r', 3)
-                .style('fill', '#319e9e')
-                .attr('id', function(d) { return 'circle_' + d; } )
+            .attr("height", height + margin.top + margin.bottom);
 
         legend.selectAll('text')
               .data(cars)
@@ -78,14 +68,11 @@ var CHART_SIZE = 425;
                 .text(function(d) {return d})
                 .attr('id', function(d) { return 'label_' + d; } )
                 .attr('text-anchor', 'left')
-                .style('alignment-baseline', 'middle')
+                .style('alignment-baseline', 'middle');
 
         legend.selectAll('text')
               .on('mouseover', function(d)
               {
-                d3.select("#circle_" + d)
-                    .style('fill', 'red')
-                    .attr('r', '4px')
 
                 d3.select('#label_' + d)
                     .style('fill', 'red')
@@ -104,9 +91,6 @@ var CHART_SIZE = 425;
                     
             
               .on('mouseout', function(d) {
-                d3.select("#circle_" + d)
-                    .style('fill', '#319e9e')
-                    .attr('r', '3px')
 
                 d3.select('#label_' + d)
                     .style('fill', '#319e9e')
@@ -166,10 +150,6 @@ var CHART_SIZE = 425;
                 d3.select("#right_" + d.ID)
                     .style('fill', 'red')
                     .attr('r', '8px')
-            
-                d3.select("#circle_" + d.Manufacturer)
-                    .style('fill', 'red')
-                    .attr('r', '4px')
 
                 d3.select('#label_' + d.Manufacturer)
                     .style('fill', 'red')
@@ -191,10 +171,6 @@ var CHART_SIZE = 425;
                 d3.select('#label_' + d.Manufacturer)
                     .style('fill', '#319e9e')
                     .style('font-weight', 'normal');
-            
-                d3.select("#circle_" + d.Manufacturer)
-                    .style('fill', '#319e9e')
-                    .attr('r', '3px')
 
                 div.transition()		
                     .duration(200)		
@@ -293,10 +269,6 @@ var CHART_SIZE = 425;
                         d3.select("#left_" + d.ID)
                             .style('fill', 'red')
                             .attr('r', '8px');
-              
-                        d3.select("#circle_" + d.Manufacturer)
-                            .style('fill', 'red')
-                            .attr('r', '4px')
 
                         d3.select('#label_' + d.Manufacturer)
                             .style('fill', 'red')
@@ -314,10 +286,6 @@ var CHART_SIZE = 425;
                             .style('fill', null)
                             .style('stroke-width', '2px')
                             .style('opacity', .5)
-              
-                        d3.select("#circle_" + d.Manufacturer)
-                            .style('fill', '#319e9e')
-                            .attr('r', '3px');
 
                         d3.select('#label_' + d.Manufacturer)
                             .style('fill', '#319e9e')
