@@ -5,13 +5,19 @@
 	<link href="documentationStyle.css" type="text/css" rel="stylesheet">
 </head>
 <body>
+    <div id="container">
 	<h1>Documentation</h1>
+    <h2>Explanation Video</h2>
+    <br>
+        <video src="path to video here" controls></video> <!--link to video-->
+    <br><br>
+    
 	<h2>The Design Processes</h2>
 		<p>The original goal of our team was to find a dataset that aligned with our interests. We quickly found a common interest in cars and began looking for datasets that were robust in the number of records and attributes. In our first iteration of the design phase we honed in on a dataset that can be found on Kaggle. The original dataset that had almost 12,000 records consisting of 16 different attributes. </p>
 	<h2>Idea Generation</h2>
 		<p>Using the first dataset we came up with visualization ideas that would allow us to find the correlations between price and popularity, specific attributes of a car and its popularity, and how the popularity of a car changed over time. A scatter plot was one of the main types of visualizations we hoped to use as it is simple to derive correlations between two and sometimes 3 different variables. We planned on implementing a timeline visualization like one posed on the New York Times that visualized how different markets were affected by the 2008 recession. Along with a scatterplot and timeline we wanted to create a parallel chart as this would allow us to see the correlation three plus variables at once. </p>
 		<img src="parallelSketch.jpg" id="parallel" class="images"/>
-		<br>
+        <br>
 		<img src="skatterSketch.jpg" id="scatter" class="images"/>
 
 	<h2>Design Phase 1</h2>
@@ -25,8 +31,6 @@
 		<p>In the fourth iteration of the design phase we addressed the noisiness by removing colors for the manufacturer and adding a gradient color scheme. This color scheme encoded the variable on the x-axis of the price. This cleaned up the visualizations as well as making it easier to draw conclusions on the parallel charts.</p>
 	<h2>Design Phase 5</h2>
 		<p>In the final interaction of our design process we added a drop-down box to allow the user to select what they wanted to view in the scatter plot and parallel chart. The drop-down box is used to select the x-axis of the scatter plot and the middle line in the parallel chart.  By adding the drop-down box, we were able to increase interactivity and broaden the information that can be gained from viewing the visualizations. </p>
-
-	<div id="video">Insert Video Here</div> <!--Need to embed video and add link once video is complete-->
 
 	<h2>Interesting Finds</h2>
 		<p>The goal of these visualizations was to determine how different attributes related to a vehicle's populaty. Specifically, out of the releveant attributes (<em>Price, Fuel Efficiency, Horsepower, Engine Size, Power Perf Factor</em>) what, if any, determines higher sales. <br><br> Based on the visualizations is seems vehicles priced between $10,000 and $40,000 are the most popular. More importantly, we can see the price has a negative correlation with sales. The cheaper a vehicle is, the more it will be sold.</p>
@@ -52,10 +56,10 @@
 		<p>We are happy with the final visulaization, but as with any project there are always improvements that could be made. We would like to find a more robust data set to see if the trends found here persist across a much larger population of vehicles. Finding a dataset with time data and location data would allow us to see trends over time and how different attributes relate to increased sales in different parts of the world. With the current visualizations, adding a function that allows you to compare a few manufacturers instead of all manufacturers would allow us to dig deep into what specific manufacturers are doing well compared to others. </p>
 
 		<div class="links">
-			<a href="../finalProject.html">Main</a> <!--link back to main page-->
-			<video src="path to video here" controls></video> <!--link to video-->
+			<a href="../finalProject.html">Visualization</a> <!--link back to main page-->
+            <a href="">Video</a>
 		</div>
-
+    </div>
 
 
 </body>

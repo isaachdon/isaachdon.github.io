@@ -1,14 +1,18 @@
 body {
 	padding: 0;
-	margin: 10px;
-	max-width: 1000px;
+	max-width: 1250px;
 	background: linear-gradient(-45deg, #FAFAFA, #D8D8D8);
-
+    text-align: center;
 }
 
 p {
 	font-family: Arial;
-	text-align: left;
+	text-align: justify;
+    left: 0;
+    right: 0;
+    margin: auto;
+    padding: 10px;
+    max-width: 1000px;
 }
 
 h1 {
@@ -36,9 +40,10 @@ h2 {
 
 .links {
 	margin: auto;
-	padding-left: 325px;
 	margin: auto;
-	width: 50%;
+    position: fixed;
+    top: 20px;
+    left: 20px;
 }
 
 .links a{
@@ -48,14 +53,15 @@ h2 {
 	padding: 5px 10px;
 	border: solid 2px #1D6969;
 	border-radius: 5px;
+    text-decoration: none;
 }
 
 #parallel {
-	width: 800px;
+	height: 250px;
 }
 
 #scatter {
-	width: 400px;
+	height: 300px;
 	margin-bottom: 20px;
 }
 
@@ -68,4 +74,11 @@ h2 {
 	margin-left: auto;
 	margin-right: auto;
 	box-shadow: 10px 10px 5px grey;
+}
+
+#container {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
 }
