@@ -36,7 +36,7 @@ var CHART_SIZE = 425;
             .domain([0, d3.max(data, function(d) { return d.Sales })]).range([CHART_SIZE, 0]);
             
         //Inspiration for color function code
-        //author: The D3 Gallery
+        //author: Yan Holtz
         //year: 2018
         //title: Managing colors in d3.js
         //time accessed: 05/04/2020 10:22pm
@@ -219,7 +219,7 @@ var CHART_SIZE = 425;
           
             
         //Inspiration for Parallel chart code
-        //author: The D3 Gallery
+        //author: Yan Holtz
         //year: 2018
         //title: Most basic parallel coordinates chart in d3.js
         //time accessed: 5/4/2020 10:36pm
