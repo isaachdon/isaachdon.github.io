@@ -35,6 +35,8 @@ var CHART_SIZE = 425;
         var yScale = d3.scaleLinear()
             .domain([0, d3.max(data, function(d) { return d.Sales })]).range([CHART_SIZE, 0]);
             
+            
+        // this function inspiration found at https://www.d3-graph-gallery.com/graph/custom_color.html
         var myColor = d3.scaleSequential().domain([0, d3.max(data, function(d) { return +d[customSelect] })])
             .interpolator(d3.interpolateCool);
         
