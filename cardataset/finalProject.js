@@ -35,11 +35,21 @@ var CHART_SIZE = 425;
         var yScale = d3.scaleLinear()
             .domain([0, d3.max(data, function(d) { return d.Sales })]).range([CHART_SIZE, 0]);
             
-            
-        // this function inspiration found at https://www.d3-graph-gallery.com/graph/custom_color.html
+        //Inspiration for color function code
+        //author: The D3 Gallery
+        //year: 2018
+        //title: Managing colors in d3.js
+        //time accessed: 05/04/2020 10:22pm
+        //URL: https://www.d3-graph-gallery.com/graph/custom_color.html
         var myColor = d3.scaleSequential().domain([0, d3.max(data, function(d) { return +d[customSelect] })])
             .interpolator(d3.interpolateCool);
         
+        //Inspiration for legend code
+        //author: Yan Holtz
+        //year: 2018
+        //title: Building legends in d3.js
+        //time accessed: 5/4/2020 10:28pm
+        //URL: https://www.d3-graph-gallery.com/graph/custom_legend.html
         var cars = [ "Acura", "Audi", "BMW", "Buick", "Cadillac", "Chevrolet", "Chrysler", "Dodge",  "Ford", "Honda",  "Hyundai", "Infiniti", "Jaguar", "Jeep", "Lexus", "Lincoln", "Mitsubishi", "Mercury", "Mercedes-B", "Nissan", "Oldsmobile", "Plymouth", "Pontiac", "Porsche", "Saab", "Saturn", "Subaru", "Toyota", "Volkswagen", "Volvo"];
 
 
@@ -206,6 +216,16 @@ var CHART_SIZE = 425;
         
         
         ////////////////////////////////////////////////////////parallel coordinates chart
+          
+            
+        //Inspiration for Parallel chart code
+        //author: The D3 Gallery
+        //year: 2018
+        //title: Most basic parallel coordinates chart in d3.js
+        //time accessed: 5/4/2020 10:36pm
+        //URL: https://www.d3-graph-gallery.com/graph/parallel_basic.html
+        
+            
         // set the dimensions and margins of the graph
         var margin = {top: 30, right: 0, bottom: 10, left: 0},
           width = 550 - margin.left - margin.right,
