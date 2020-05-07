@@ -1,0 +1,100 @@
+@charset "utf-8";
+/* CSS Document */
+/**************************************
+ Filename: finalRelease.css
+ Author: Isaac Herndon (INH)
+ Create Date: 29 April 2020
+ Purpose: Provide style for the final release page
+ Last modified on: 05/02/2020
+ Last modified by: Isaac Herndon (INH)
+ Modification History:
+ 29 April 2020: Create date of this file (INH)
+ 01 May 2020: Added styling for the output (INH)
+ 02 May 2020: Fixed header block documentation (INH)
+ 
+**************************************/
+
+body {
+    background: url(https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fstmed.net%2Fsites%2Fdefault%2Ffiles%2Fratrod-wallpapers-32530-4125803.jpg&f=1&nofb=1)no-repeat center center fixed;
+    background-size: cover;
+}
+
+#information {
+    width: 1250px;
+    max-width: 100%;
+    margin: 0 auto;
+    position: absolute;
+    left: 0;
+    right: 0;
+}
+
+p {
+    text-align: justify;
+}
+
+.white {
+    color: white;
+}
+
+.shop {
+    border-radius: 5px;
+}
+
+.pageImg {
+    display: inline-block;
+    top: 0;
+    max-width: 600px;
+}
+
+.pageImg, img {
+    width: 550px;
+}
+
+.pageTxt {
+    display: inline-block;
+    vertical-align: top;
+    width: 600px;
+    text-align: justify;
+    padding: 20px;
+}
+
+#carSpinner {
+    width: 70px;
+}
+
+#shopSpinner {
+    width: 70px;
+}
+
+#equipSpinner {
+    width: 70px;
+}
+
+label.error {
+    color: forestgreen;
+    font-weight: bold;
+}
+
+#output {
+    text-align: center;
+    padding: 10px;
+}
+
+#output span {
+    padding: 9px;
+    margin: 4px;
+    display: inline-block;
+    width: 460px;
+    border-radius: 20px;
+    box-shadow: 4px 5px darkgrey;
+}
+
+.darker {
+    background-color: forestgreen;
+    color: white;
+}
+
+.lighter {
+    background-color: lightgrey;
+    color: forestgreen;
+}

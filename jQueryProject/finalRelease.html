@@ -1,0 +1,167 @@
+<!doctype html>
+
+<!--
+TITLE: finalRelease.html
+AUTHOR: Isaac Herndon (INH)
+PURPOSE: display for the final release
+ORIGINALLY CREATED ON: 04/16/2020
+LAST MODIFIED ON: 05/02/2020
+LAST MODIFIED BY: Isaac Herndon (INH)
+MODIFICATION HISTORY: 
+04/29/2020: Create date of this iteration
+05/01/2020: Added comment about browser testing (INH)
+05/02/2020: Fixed header block documentation (INH)
+
+-->
+
+<!-- Tested in Microsoft Edge, Google Chrome, and Firefox -->
+<!-- Submit button shows as "Submit" in Chrome, but as "Submit Query" in Firefox and Edge -->
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <title>Final Release</title>
+    <link rel="stylesheet" type="text/css" href="js/jquery-ui.css">
+    <link rel="stylesheet" type="text/css" href="finalRelease.css">
+</head>
+
+<body>
+	<header>
+		<h1 class="white">Final Release</h1>
+		<p class="white">By Isaac Herndon</p>
+    </header>
+    
+    <div id='information'>
+        <div id='links'>
+        <ul>
+            <li><a href="#tab1">Contact Us</a></li>
+            <li><a href="#tab2">The Process</a></li>
+            <li><a href="#tab3">Learning Opportunities</a></li>
+            <li><a href="#tab4">Packages</a></li>
+            <li><a href="#tab5">Car Purchase</a></li>
+            <li><a href="#tab6">Car Rental</a></li>
+            <li><a href="#tab7">Shop Rental</a></li>
+            <li><a href="#tab8">Equipment Rental</a></li>
+            <li><a href="#tab9">Directions</a></li>
+        </ul>
+        </div>
+        
+        
+        <div id="tab1">
+            <form id="formId" method="get">
+                <label for="first" class="required">First Name</label>
+                <div class="input">
+                <input type="text" name="first" id="first" placeholder="John" autofocus></div>
+                <label for="last" class="required">Last Name</label>
+                <div class="input">
+                <input type="text" name="last" id="last" placeholder="Doe"></div>
+                <label for="email" class="required">Email</label>
+                <div class="input">
+                <input type="email" name="email" id="email" placeholder="john.doe@domain.com"></div>
+                <label for="pass" class="required">Password</label>
+                <div class="input">
+                <input type="password" id="pass" name="password" placeholder="password" ></div>
+                <label for="confirmPass" class="required">Confirm Password</label>
+                <div class="input">
+                <input type="password" id="confirmPass" name="confirmPassword" placeholder="password" ></div>
+                <label for="phone">Phone</label>
+                <div class="input">
+                <input type="tel" name="tel" id="phone"
+                placeholder="555-555-5555"></div><br>
+                <fieldset>
+                    <legend>Please select the learning packages you are interested in:</legend>
+                    <label for="checkbox-1">Basic Fix Learning</label>
+                    <input type="checkbox" name="checkbox" id="checkbox-1" class="checkboxes" value="Basic">
+                    <label for="checkbox-2">Fabrication Learning</label>
+                    <input type="checkbox" name="checkbox" id="checkbox-2" class="checkboxes" value="Fabrication">
+                    <label for="checkbox-3">Basically an Apprentice Learning</label>
+                    <input type="checkbox" name="checkbox" id="checkbox-3" class="checkboxes" value="Apprentice">
+                </fieldset>
+                <p>
+                    <label for="carSpinner">How many cars are you wanting to rent?</label>
+                    <input id="carSpinner" name="carRental"><br><br>
+                    <label for="shopSpinner">How many shops do you need to rent?</label>
+                    <input id="shopSpinner" name="shopRental"><br><br>
+                    <label for="equipSpinner">How many equipment items do you need to rent?</label>
+                    <input id="equipSpinner" name="equipRental"><br>
+                </p>
+                <p>
+                    <label for="date">Date for Visit:</label>
+                    <input type="text" id="date" name="date"/>
+                </p>
+                <fieldset>
+                    <legend>Do you feel the information provided to you is sufficient for you to understand?</legend>
+                    <label for="radio-1">Yes</label>
+                    <input type="radio" name="radio" id="radio-1" value="Yes">
+                    <label for="radio-2">No</label>
+                    <input type="radio" name="radio" id="radio-2" value="No">
+                </fieldset>
+                <br>
+                <div class="ui-widget">
+                  <label for="tags">Anything you want more info on? If not, type NA: </label>
+                  <input id="tags" name="tags">
+                </div><br>
+                <input class="ui-button ui-corner-all ui-widget" type="submit">
+                <input type="reset">
+            </form>
+        </div>
+        <div id="tab2"><p>Ride Recyclers, at its core, is a mechanic shop. We will modify or fix your car, and that is the essential service we provide. But we decided that wasn't enough. As a result of this, we want to further our services by teaching you how to modify or fix your car while we work. When you do business with us, you have the added option of becoming a student of one of our knowledgeable coaches so you can continue work on your car on your own.</p></div>
+        <div id="tab3"><p>If you choose to learn with us, you will have the opportunity to better your understanding of automobiles in general, furthering the development of the car community. You could learn anything from a basic oil change, to a full rebuild of a classic muscle car. The possibilities are virtually endless!</p></div>
+        <div id="tab4">
+            <p>We have three ways for you to learn in our shop:</p>
+            <br>
+            <p><b><u>Basic Fix Learning</u></b></p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <p><b>$15/hr added to bill</b></p>
+            <br><br>
+            <p><b><u>Fabrication Learning</u></b></p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <p><b>$20/hr added to bill</b></p>
+            <br><br>
+            <p><b><u>Basically an Apprentice Learning</u></b></p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <p><b>$20/hr</b></p>
+        </div>
+        <div id="tab5">
+            <div class="pageImg"><img class="shop" alt="Car Purchase" src="https://speedhunters-wp-production.s3.amazonaws.com/wp-content/uploads/2012/05/03020016/AY0F8840.jpg"></div>
+            <div class="pageTxt">We tak pride in our work, and we hope you will too. We have a wide variety of custom vehicles, and we think we have one that will fit your needs.
+            <br><br><b>Price will vary</b></div>
+        </div>
+        <div id="tab6">
+            <div class="pageImg"><img class="shop" alt="Car Rental" src="https://static.educalingo.com/img/en/800/custom-car.jpg"></div>
+            <div class="pageTxt">In addition to our many cars for sale, we also have a variety of cars you can rent. These are also build by us, and we hope you will love them.
+            <br><br><b>$100/day</b></div>
+        </div>
+        <div id="tab7">
+            <div class="pageImg"><img class="shop" alt="Shop Rental" src="https://www.brydensauto.com/Images/img-shop-bay-about.jpg"></div>
+            <div class="pageTxt">If you happen to know what you're doing, but don't have the space needed for your project, we have a solution for you! You can rent a bay out for however long you need. It comes with all the standard equipment for normal jobs, along with a hydraulic jack.
+            <br><br><b>$150/day</b></div>
+        </div>
+        <div id="tab8">
+            <div class="pageImg"><img class="shop" alt="Equipment Rental" src="https://www.millerwelds.com/-/media/miller-electric/images/article-images/b/2/c/miller1554_feature.jpg?h=720&w=1280&la=en&hash=4EA5095DFC006176AE5D7867B099DE2B"></div>
+            <div class="pageTxt">If you know what you're doing and have the space you need for your project, but you're missing a certain piece of equipment for the job, we have you covered. We have a variety of equipment you can rent from us.
+            <br><br><b>$50/day</b></div>
+        </div>
+        <div id="tab9"><p>Our address is 5555 Random Lane, Indianapolis, IN 46202.</p></div>
+        <div id="output">
+        </div>
+    </div>
+    
+    <!-- This links to the jQuery library-->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    
+    <!-- jQuery UI Plugin -->
+    <script src="js/jquery-ui.js"></script>
+    
+    <!-- This links to the validation plugin -->
+    <script src="validation/dist/jquery.validate.js"></script> 
+    
+    <!-- This links to the additional methods for the validation plugin -->
+    <script src="validation/dist/additional-methods.js"></script> 
+    
+    <!-- This links to multiWritesJS.js -->
+    <script src="finalRelease.js"></script>
+    
+</body>
+</html>
