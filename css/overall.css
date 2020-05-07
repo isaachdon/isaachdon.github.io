@@ -1,0 +1,117 @@
+* {
+    font-family: Arial;
+}
+
+html {
+    min-height: 100%;
+}
+
+body {
+    background-image: linear-gradient(rgba(250, 67, 192, 1), rgba(60, 240, 236, 1));
+    background-repeat: no-repeat;
+    min-height: 100%;
+}
+
+#header {
+    height: 100px;
+    width: 100%;
+    background-color: aqua;
+    border-radius: 2px;
+}
+
+.links {
+    display: inline-block;
+    background-color: white;
+    color: rgba(250, 67, 192, 1);
+    padding: 10px;
+    font-size: 20px;
+    border-radius: 10px;
+    margin-left: 10px;
+    text-decoration: none;
+}
+
+.links:hover {
+    background-color: #fa43c0;
+    color: white;
+}
+
+#titleCell {
+    text-align: right;
+}
+
+#bannerTable {
+    height: 100%;
+    width: 100%;
+}
+
+#linkColumn {
+    text-align: left;
+}
+
+#siteTitle {
+    color: white;
+    padding: 10px;
+    font-size: 40px;
+    margin-right: 10px;
+    text-decoration: none;
+    background-color: rgba(250, 67, 192, 1);
+    border-radius: 10px;
+}
+
+/* citation for box code below
+author: Tobias Ahlin Bjerrome
+date accessed: 05/06/2020
+url: https://tobiasahlin.com/blog/how-to-animate-box-shadow/
+*/
+
+.box {
+    position: relative;
+    display: inline-block;
+    background-color: #fff;
+    width: 100%;
+    border-radius: 5px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+    transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.box::after {
+    content: "";
+    border-radius: 5px;
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    box-shadow: 0 5px 15px;
+    opacity: 0;
+    -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+    transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.box:hover {
+    -webkit-transform: scale(1.02, 1.02);
+    transform: scale(1.02, 1.02);
+}
+
+.box:hover::after {
+    opacity: 1;
+}
+
+/* end of cited code */
+
+.displayArea {
+    background-color: rgba(60, 240, 236, .8);
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 10px;
+    padding: 20px;
+}
+
+.infoCell {
+    padding: 30px;
+    text-align: justify;
+    color: white;
+}
