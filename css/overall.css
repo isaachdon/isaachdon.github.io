@@ -115,3 +115,8 @@ url: https://tobiasahlin.com/blog/how-to-animate-box-shadow/
     text-align: justify;
     color: white;
 }
+
+#resumeDisplay {
+    width: 1000px;
+    text-align: center;
+}

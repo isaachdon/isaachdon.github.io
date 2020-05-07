@@ -11,11 +11,4 @@ $(document).ready(function() {
         lastScrollTop = st;
     });
     
-    $('#header').on('mouseOver', function(){
-        $('#header').animate({
-            'boxShadowX': '10px',
-            'boxShadowY':'10px',
-            'boxShadowBlur': '20px'
-        })
-    }, 250);
 });
