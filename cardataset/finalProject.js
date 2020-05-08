@@ -137,6 +137,12 @@ var CHART_SIZE = 425;
             .style('fill', function(d){return myColor(+d[customSelect]) });
 
 
+        //inspiration for tooltip
+        //author: d3noob
+        //year: 2019
+        //title: Simple d3.js tooltips
+        //latest time accessed: 5/7/2020 10:35pm
+        //URL: https://bl.ocks.org/d3noob/a22c42db65eb00d4e369
 
         // tooltip
         var div = d3.select("body").append("div")	
