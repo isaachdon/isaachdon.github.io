@@ -184,10 +184,10 @@ url: https://tobiasahlin.com/blog/how-to-animate-box-shadow/
 }
 
 .homeCards:hover {
-    width: 450px;
-    height: 600px;
+    width: 413px;
+    height: 550px;
     top: 0;
     opacity: 1;
     padding: 15px;
-    font-size: 30px;
+    font-size: 28px;
 }
