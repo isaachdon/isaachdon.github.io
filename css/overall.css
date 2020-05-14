@@ -170,20 +170,24 @@ url: https://tobiasahlin.com/blog/how-to-animate-box-shadow/
 
 .homeCards {
     display: inline-block;
+    vertical-align: top;
     width: 300px;
     height: 400px;
+    font-size: 20px;
     background-color: rgba(60, 240, 236, .8);
     margin: 10px;
-    font-size: 20px;
     color: white;
     opacity: .7;
-    transition: width .5s, height .5s, font-size .5s, opacity .5s;
+    transition: width .5s, height .5s, font-size .5s, opacity .5s, padding .5s;
+    padding: 10px;
+    text-align: left;
 }
 
 .homeCards:hover {
     width: 450px;
     height: 600px;
-    font-size: 30px;
     top: 0;
     opacity: 1;
+    padding: 15px;
+    font-size: 30px;
 }
