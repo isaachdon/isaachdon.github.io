@@ -170,10 +170,11 @@ url: https://tobiasahlin.com/blog/how-to-animate-box-shadow/
 
 .homeCards {
     display: inline-block;
+    position: relative;
     vertical-align: top;
     width: 300px;
     height: 400px;
-    font-size: 20px;
+    font-size: 17px;
     background-color: rgba(60, 240, 236, .8);
     margin: 10px;
     color: white;
@@ -181,6 +182,9 @@ url: https://tobiasahlin.com/blog/how-to-animate-box-shadow/
     transition: width .5s, height .5s, font-size .5s, opacity .5s, padding .5s;
     padding: 10px;
     text-align: left;
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    overflow: hidden;
 }
 
 .homeCards:hover {
@@ -189,5 +193,29 @@ url: https://tobiasahlin.com/blog/how-to-animate-box-shadow/
     top: 0;
     opacity: 1;
     padding: 15px;
-    font-size: 28px;
+    font-size: 24px;
+}
+
+#trident {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin-top: 0px;
+    display: block;
+    width: 86px;
+    height: 100px;
+    transition: width .5s, height .5s;
+}
+
+.homeCards:hover #trident {
+    width: 129px;
+    height: 150px;
+}
+
+.homeCardText {
+    background-color: rgba(250, 67, 192, .8);
+    padding: 10px;
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    margin-top: 5px;
 }
