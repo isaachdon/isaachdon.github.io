@@ -174,7 +174,7 @@ url: https://tobiasahlin.com/blog/how-to-animate-box-shadow/
     display: inline-block;
     position: relative;
     vertical-align: top;
-    width: 32%;
+    width: 30%;
     height: 400px;
     font-size: 17px;
     margin: 2px;
@@ -223,4 +223,26 @@ url: https://tobiasahlin.com/blog/how-to-animate-box-shadow/
     margin-top: 5px;
     position: relative;
     z-index: 2;
+}
+
+#introText {
+    position: relative;
+    text-align: justify;
+    width: 800px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    margin: 30px;
+    font-size: 18px;
+}
+
+#disclaimer {
+    position: relative;
+    text-align: justify;
+    width: 800px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    margin: 30px;
+    font-size: 18px;
 }
