@@ -143,7 +143,7 @@ url: https://tobiasahlin.com/blog/how-to-animate-box-shadow/
 }
 
 #resumeDownload {
-    text-align: left;
+    text-align: center;
     display: inline-block;
     background-color: white;
     color: rgba(250, 67, 192, 1);
