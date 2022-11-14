@@ -44,6 +44,27 @@ body {
     width: 225px;
 }
 
+.portfolioTitles {
+    display: inline-block;
+    background-color: white;
+    color: rgba(250, 67, 192, 1);
+    padding: 10px;
+    font-size: 20px;
+    margin-left: 10px;
+    text-decoration: none;
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    width: 175px;
+    transition: box-shadow .25s, width .25s, background-color .5s, color .5s;
+}
+
+.portfolioTitles:hover {
+    background-color: #fa43c0;
+    color: white;
+    box-shadow: 3px 5px rgba(145, 36, 111, 1);
+    width: 225px;
+}
+
 #titleCell {
     text-align: right;
 }
