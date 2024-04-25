@@ -3,10 +3,10 @@ $(document).ready(function() {
     $(window).on('scroll', function() {
         st = $(this).scrollTop();
         if(st < lastScrollTop) {
-            $('#header').slideDown(250);
+            $('#header').slideDown(75);
         }
         else {
-            $('#header').slideUp(250);
+            $('#header').slideUp(75);
         }
         lastScrollTop = st;
     });
